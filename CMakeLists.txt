@@ -9,7 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   geometry_msgs
-  message_generation  # Add this line for message generation
+  ##message_generation  # Add this line for message generation
 )
 
 ## Generate messages in the 'msg' folder
@@ -18,11 +18,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##)
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-  geometry_msgs
-)
+##generate_messages(
+##  DEPENDENCIES
+##  std_msgs
+##  geometry_msgs
+##)
 
 ## Declare a catkin package
 catkin_package(
