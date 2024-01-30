@@ -29,6 +29,10 @@ catkin_package(
   CATKIN_DEPENDS roscpp std_msgs geometry_msgs message_runtime  # Add 'message_runtime' for message generation
 )
 
+catkin_install_python(PROGRAMS src/square_wave_surge_command.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 ## Build talker and listener
 include_directories(
   ${catkin_INCLUDE_DIRS}
